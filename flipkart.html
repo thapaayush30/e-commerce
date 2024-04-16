@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		
+		 <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+
+	<title></title>
+<style>
+.header{
+width: 100%;
+height: 2000px;
+background:whitesmoke;
+position: fixed; 
+}
+
+
+
+
+
+
+.logo h1{
+color: blue;
+float: left;
+font-size: 18px;
+margin-right:25px ;
+margin-top: 10px;
+margin-left: 30px;
+/*position: fixed;*/
+}
+
+h2{
+margin-top: 12px;
+margin-left: 7px;
+margin-right: 25px;
+text-align: center;
+font-weight: lighter;
+font-size:20px;
+}
+
+.dropdown{
+	margin-top:10px;
+
+}
+
+h3{
+	margin-top: 12px;
+margin-left: 10px;
+text-align: center;
+font-weight: lighter;
+font-size:20px;
+}
+
+h4{
+/*float: left;*/
+font-size: 15px;
+margin-right:25px;
+margin-top: 10px;
+margin-left: 100px;
+}
+
+h5{
+/*float: left;*/
+font-size: 15px;
+margin-left:80px ;
+margin-top: 10px;
+}
+
+.container3{
+	width: 100%;
+height:180px;
+/*border: 1px solid red;*/	
+background:white;
+margin-top: 50px;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 10%;
+  padding:5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media (max-width: 767px) {
+		.carousel-inner .carousel-item > div {
+			display: none;
+		}
+		.carousel-inner .carousel-item > div:first-child {
+			display: block;
+		}
+	}
+
+	.carousel-inner .carousel-item.active,
+	.carousel-inner .carousel-item-next,
+	.carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+
+	/* medium and up screens */
+	@media (min-width: 768px) {
+
+		.carousel-inner .carousel-item-end.active,
+		.carousel-inner .carousel-item-next {
+			transform: translateX(25%);
+		}
+
+		.carousel-inner .carousel-item-start.active, 
+		.carousel-inner .carousel-item-prev {
+			transform: translateX(-25%);
+		}
+	}
+
+	.carousel-inner .carousel-item-end,
+	.carousel-inner .carousel-item-start { 
+		transform: translateX(0);
+	}
+
+ .container4{
+ 	width: 100%;
+height:250px;
+/*border: 1px solid red;*/	
+background:white;
+margin-top:10px;
+ }
+  
+h6{
+text-align: left;
+font-weight: bold;
+text-decoration-color:black ;
+margin-left: 10px;
+font-size:25px;
+}
+
+ .container5 {
+ 	width: 100%;
+height:350px;
+/*border: 1px solid red;*/	
+margin-top:10px;
+ }
+ 
+ .container6{
+ 	width: 100%;
+height:250px;
+/*border: 1px solid red;*/	
+background:black;
+margin-top:10px;
+ }
+
+h7{
+margin-left:10px;
+}
+
+p{
+margin-top: 40px;
+}
+
+
+</style>
+
+
+</head>
+<body>
+<div class="">
+
+
+<div class="row justify-centre header">
+  <div class="logo">
+    <h1>Flipkart<br>
+    Explore Plus</h1>
+
+<form class="d-flex" role="search">
+        <input class="form-control me-1" type="search" placeholder="Search For Products, Brands and More" aria-label="Search" style="width: 60%; float:left;margin-top: 10px;border: 1px solid black;">
+      
+ 
+ <img src="images/login.png" style="width: 30px; height: 30px; margin-top: 10px; margin-left: 30px;"> 
+
+ <li class="dropdown">
+	<a class="navbar-brand dropdown-toggle" href="#"
+ 	 data-bs-toggle="dropdown">Login</a>
+
+<div class="dropdown-menu">
+	<a class="dropdown-item" href="#">New customer?</a>
+	<div class="dropdown-divider"></div>
+	<a class="dropdown-item h-" href="#"><img src="images/login.png" style="width: 18px;height: 18px;">My Profile</a>
+	<a class="dropdown-item" href="#">Flipkart Plus Zone</a>
+	<a class="dropdown-item" href="#"><img src="images/box-seam.svg"> Orders</a>
+	<a class="dropdown-item" href="#"><img src="images/heart.svg">Wishlist</a>
+	<a class="dropdown-item" href="#"><img src="images/gift.svg">Rewards</a>
+	<a class="dropdown-item" href="#"><img src="images/card.png">Gift Cards</a>
+</div>
+</li>
+
+ 	<img src="images/cart3.svg" style="margin-left: 30px;"><h2>Cart</h2>
+  <img src="images/shop-window.svg"><h3>Become a seller</h3>
+
+</form>
+</div>
+</div>
+
+<div class="container3">
+<div class="row">
+  <div class="column">
+    <img src="images/cart.jpg" style="margin-left: 90px; margin-top: 15px;"><h4>Grocery</h4>
+  </div>
+  <div class="column">
+    <img src="images/cart1.webp" style="margin-left:70px; margin-top: 15px;"><h5>Mobiles</h5>
+  </div>
+  <div class="column">
+    <img src="images/cart2.webp" style="margin-left:70px; margin-top: 15px;"><h5>Fashion</h5>
+  </div>
+  <div class="column">
+    <img src="images/cart3.webp" style="margin-left:70px; margin-top: 15px;"><h5>Electronics</h5>
+  </div>
+  <div class="column">
+    <img src="images/cart4.webp" style="margin-left:70px; margin-top: 15px;"><h5>Home & Furniture</h5>
+  </div>
+  <div class="column">
+    <img src="images/cart5.webp" style="margin-left:70px; margin-top: 15px;"><h5>Appliances</h5>
+  </div>
+  <div class="column">
+    <img src="images/cart6.webp" style="margin-left:70px; margin-top: 15px;"><h5>Travel</h5>
+  </div>
+  <div class="column">
+    <img src="images/cart7.webp" style="margin-left:70px; margin-top: 15px;"><h5>Beauty, Toys & More</h5>
+  </div>
+  <div class="column">
+    <img src="images/cart8.webp" style="margin-left:70px; margin-top: 15px;"><h5>Two Wheelers</h5>
+  </div>
+
+ <div class="container">
+	<div class="row py-3">
+
+		<div class="col">
+	<div id="mycrousel" class="carousel slide" data-bs-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-bs-target="mycrousel" data-bs-slide-to="0" class="active"></li>
+			<li data-bs-target="mycrousel"  data-bs-slide-to="1"></li>
+		    <li data-bs-target="mycrousel" data-bs-slide-to="2"></li>
+		  </ol>
+
+		  	<div class="carousel-inner">
+			<div class="carousel-item"
+			data-bs-internal="2000">
+          <img src="images/carousel.webp" class="d-block w-100" style="height: 300px">
+            
+            </div>
+
+            <div class="carousel-item active"
+            	data-bs-interval="2000">
+            	<img src="images/carousel1.webp" class="d-block w-100" style="height: 300px">
+            	 </div>
+        <div class="carousel-item "
+            	data-bs-interval="2000">
+            	<img src="images/carousel2.webp" class="d-block w-100" style="height: 300px">
+            	 </div>
+
+        <div class="carousel-item "
+            	data-bs-interval="2000">
+            	<img src="images/carousel3.webp" class="d-block w-100" style="height:300px">
+             </div>
+
+
+        
+        <a href="mycrousel" class="carousel-control-prev" data-bs-slide="prev">
+        	<span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a href="mycrousel" class="carousel-control-next" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+</div>
+</div>
+
+
+<div class="container4 text-center my-3"><h6>Best of electronics</h6>
+		<div class="row mx-auto my-auto justify-content-center">
+			<div id="recipeCarousel" class="carousel carousel_1 slide" data-bs-ride="carousel">
+				<div class="carousel-inner"role="listbox">
+					<div class=" carousel-item carousel-item_1 active">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/cap.jpeg" class="img-fluid">
+								</div>
+								<div class="card-img-overlay">Slide 1</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item carousel-item_1 ">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/cap1.jpeg" class="img-fluid">
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+					<div class=" carousel-item carousel-item_1">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/cap2.jpeg" class="img-fluid">
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+					<div class=" carousel-item carousel-item_1">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/cap3.jpeg" class="img-fluid">
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item carousel-item_1">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/cap4.jpeg" class="img-fluid">
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item carousel-item_1">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/cap6.jpg">
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+				
+
+				</div>
+				<a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</a>
+				<a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</a>
+			</div>
+		</div>		
+	</div>
+
+
+
+<div class="container4 text-center my-3"><h6>Beauty , Food , Toys & more</h6>
+		<div class="row mx-auto my-auto justify-content-center">
+			<div id="recipeCarousel2" class="carousel carousel_2 slide" data-bs-ride="carousel">
+				<div class="carousel-inner"role="listbox">
+					<div class=" carousel-item carousel-item_2 active">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/raw.jpg" style="height: 180px;" class="img-fluid">
+								</div>
+								<div class="card-img-overlay">Slide 1</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item carousel-item_2 ">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/raw1.jpg" style="height: 180px;" class="img-fluid">
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+					<div class=" carousel-item carousel-item_2">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/raw2.jpg"style="height:180px;" class="img-fluid">
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+					<div class=" carousel-item carousel-item_2">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/raw3.jpeg" class="img-fluid">
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item carousel-item_2">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/raw4.jpeg" class="img-fluid">
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item carousel-item_2">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/raw5.jpeg">
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+				
+
+				</div>
+				<a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel2" role="button" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</a>
+				<a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel2" role="button" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</a>
+			</div>
+		</div>		
+	</div>
+
+
+
+<div class="container4 text-center my-3">
+		<div class="row mx-auto my-auto justify-content-center">
+			<div id="recipeCarousel3" class="carousel carousel_3 slide" data-bs-ride="carousel">
+				<div class="carousel-inner"role="listbox">
+					<div class=" carousel-item carousel-item_3 active">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/mad.jpg" style="height: 180px;" class="img-fluid">
+								</div>
+								<div class="card-img-overlay">Slide 1</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item carousel-item_3 ">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/mad1.jpeg" style="height: 180px;" class="img-fluid">
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+					<div class=" carousel-item carousel-item_3">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/mad2.jpg"style="height:180px;" class="img-fluid">
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+					<div class=" carousel-item carousel-item_3">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/mad3.webp"style="height:180px;" class="img-fluid">
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item carousel-item_3">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/mad4.jpg"style="height:180px;"  class="img-fluid">
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item carousel-item_3">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-img">
+									<img src="images/mad5.jpeg"style="height:180px;" >
+								</div>
+								<div class="card-img-overlay"></div>
+							</div>
+						</div>
+					</div>
+				
+
+				</div>
+				<a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel3" role="button" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</a>
+				<a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel3" role="button" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</a>
+			</div>
+		</div>		
+	</div>
+
+
+ <div class="container5">
+ 	<div class="row">
+<h7>Top stories : Brand Directory </h7><br><br><br><br><br><br><br><br><br><br><br><br>
+<p>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down. 
+	<br><br>
+
+What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question. 
+
+
+
+
+
+</div>
+ 
+
+
+
+
+ <div class="container6">
+ 	<div class="row">
+
+
+ 		<ul>
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">Why Full Stack?</a></li>
+    <li><a href="#">What To Learn</a></li>
+    <li><a href="#">Practical Learning</a></li>
+    <li><a href="#">About Vsit</a></li>
+    <li><a href="#">Our Instructors</a></li>
+     
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+	
+
+    
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script> 
+let items = document.querySelectorAll('.carousel_1 .carousel-item_1')
+
+		items.forEach((el) => {
+			const minPerSlide = 4
+			let next = el.nextElementSibling
+			for (var i=1; i<minPerSlide; i++){
+				if (!next) {
+            // wrap carousel by using first child
+            next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})  
+
+
+</script>
+
+<script> 
+let items2 = document.querySelectorAll('.carousel_2 .carousel-item_2')
+
+		items2.forEach((el) => {
+			const minPerSlide = 4
+			let next = el.nextElementSibling
+			for (var i=1; i<minPerSlide; i++){
+				if (!next) {
+            // wrap carousel by using first child
+            next = items2[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})  
+
+</script>
+
+<script> 
+let items3 = document.querySelectorAll('.carousel_3 .carousel-item_3')
+
+		items3.forEach((el) => {
+			const minPerSlide = 4
+			let next = el.nextElementSibling
+			for (var i=1; i<minPerSlide; i++){
+				if (!next) {
+            // wrap carousel by using first child
+            next = items3[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})  
+
+</script>
+
+</html>
